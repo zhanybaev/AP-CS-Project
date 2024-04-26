@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  body {
+    background: #f1fefa;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 40px 4vw;
+  }
+  
+  .add-form {
+    min-width: 300px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .add-form input {
+    font-size: 25px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #add-btn {
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background: rgb(16 56 82);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-top: 40px;
+  }
+  
+  .task-card.lowPriority {
+    transition: all 1s;
+    padding: 10px;
+    background-color: rgba(66, 187, 171, 0.336);
+  }
+  
+  .task-card {
+    padding: 20px;
+  }
+  
+  .task-card.highPriority {
+    background-color: tomato;
+  }
+  
+  .task-card .task-card__wrapper {
+    display: none;
+  }
+  
+  .open .task-card__wrapper {
+    display: block;
+  }
+  
+  .accordion-item-header-title {
+    cursor: pointer;
+  }
+  
+  .task-card.completed {
+    background-color: rgba(89, 192, 30, 0.603);
+    transition: 1s;
+  }
+  
+  .task-card__header {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-card__header div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    text-transform: capitalize;
+  }
+  
+  .completed .task-card__header span {
+    text-decoration: line-through;
+  }
+  
+  .task-card__header span {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .task-card__description p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  hr{
+    margin-top: 20px;
+  }
+  
+  p.description{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .task-card__header svg{
+    cursor: pointer;
+  }
