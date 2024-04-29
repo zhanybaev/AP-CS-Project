@@ -124,3 +124,38 @@
   .task-card__header svg{
     cursor: pointer;
   }
+
+
+
+@media screen and (max-width: 890px){
+  .list{
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 510px){
+  .task-card__header span{
+    font-size: 18px;
+  }
+  p.description, p.due{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 410px){
+  .list{
+    width: 95%
+  }
+}
+
+@media screen and (max-width: 300px){
+  .task-card__header span{
+    font-size: 17px;
+  }
+  p.description, p.due{
+    font-size: 16px;
+  }
+  .add-form{
+    min-width: 250px;
+  }
+}
